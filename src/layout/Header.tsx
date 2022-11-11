@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-zinc-200">
-      <div className="max-w-7xl h-[100px] mx-auto flex items-center justify-between">
+    <header className="w-full h-[100px] bg-gray-100">
+      <div className="max-w-7xl h-full mx-auto flex items-center justify-between px-5">
         <div>
           <Link to="/">
             <img
@@ -15,7 +15,10 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        <nav className="flex items-center gap-x-8 font-semibold text-lg">
+        <nav className="md:flex md:flex-row md:items-center md:gap-x-8 md:font-semibold md:text-lg flex flex-col font-semibold">
+          <Link to="/" className="hover:underline hover:underline-offset-4">
+            Anasayfa
+          </Link>
           <Link to="/bmi" className="hover:underline hover:underline-offset-4">
             BMI Nedir?
           </Link>
@@ -26,7 +29,7 @@ const Header: React.FC = () => {
             BMI Hesaplama
           </Link>
           <Link
-            to="/diet-listesi"
+            to="/diet-list"
             className="hover:underline hover:underline-offset-4"
           >
             Diyet Listesi

@@ -5,7 +5,7 @@ import Header from "../../layout/Header"
 
 const Layout: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <Header />
       <Outlet />
     </div>
