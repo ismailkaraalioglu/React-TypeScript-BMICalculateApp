@@ -29,7 +29,7 @@ const BmiCalculator: React.FC = () => {
             <div className="w-full h-3 mt-10 bg-gradient-to-r from-cyan-500 via-yellow-500 to-rose-700 rounded-full"></div>
             <input
               type="range"
-              min="0"
+              min="15"
               max="35"
               className="appearance-none w-full"
               value={userBmi}
